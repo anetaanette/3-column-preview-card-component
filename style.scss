@@ -1,3 +1,58 @@
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+/* 
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); // paragraphs
+  --very-light-gray: hsl(0, 0%, 95%); // background, headings, buttons
+}
+
+body {
+  background: var(--very-light-gray);
+  > main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    > article {
+      height: 350px;
+      width: 240px;
+      padding: 10px;
+      > h4 {
+        text-transform: uppercase;
+      }
+      > p {
+        color: var(--transparent-white);
+      }
+      > button {
+        background-color: var(--very-light-gray);
+        border: 1px solid var(--very-light-gray);
+      }
+    }
+    > .one {
+      background-color: var(--bright-orange);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    > .two {
+      background-color: var(--dark-cyan);
+    }
+    > .three {
+      background-color: var(--very-dark-cyan);
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

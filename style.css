@@ -1,1 +1,78 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+/* 
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  background: var(--very-light-gray);
+}
+
+body > main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+body > main > article {
+  height: 350px;
+  width: 240px;
+  padding: 10px;
+}
+
+body > main > article > h4 {
+  text-transform: uppercase;
+}
+
+body > main > article > p {
+  color: var(--transparent-white);
+}
+
+body > main > article > button {
+  background-color: var(--very-light-gray);
+  border: 1px solid var(--very-light-gray);
+}
+
+body > main > .one {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+body > main > .two {
+  background-color: var(--dark-cyan);
+}
+
+body > main > .three {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
