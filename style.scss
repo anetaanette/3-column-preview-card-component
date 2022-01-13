@@ -18,10 +18,10 @@ body {
     width: 80%;
     margin: auto;
     > article {
-      height: 350px;
+      height: 400px;
       width: 240px;
-      padding: 15px;
-      padding-left: 30px;
+      padding: 1em;
+      padding-left: 2em;
       > img {
         padding-top: 15px;
         padding-left: 20px;
@@ -38,22 +38,31 @@ body {
         font-family: "Lexend Deca", sans-serif;
         height: 100px;
         width: 200px;
+        line-height: 1.5em;
+        margin-top: -1em;
       }
       > button {
         background-color: var(--very-light-gray);
-        border: 1px solid var(--very-light-gray);
+        border: 2px solid var(--very-light-gray);
         height: 40px;
         width: 150px;
         border-radius: 1.5em;
-        margin-top: 1em;
+        margin-top: 4em;
+      }
+      > button:hover {
+        cursor: pointer;
+        color: var(--very-light-gray);
       }
     }
     > .one {
       background-color: var(--bright-orange);
-      border-top-left-radius: 1em;
-      border-bottom-left-radius: 1em;
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
       > button {
         color: var(--bright-orange);
+      }
+      > button:hover {
+        background-color: var(--bright-orange);
       }
     }
     > .two {
@@ -61,13 +70,19 @@ body {
       > button {
         color: var(--dark-cyan);
       }
+      > button:hover {
+        background-color: var(--dark-cyan);
+      }
     }
     > .three {
       background-color: var(--very-dark-cyan);
-      border-top-right-radius: 1em;
-      border-bottom-right-radius: 1em;
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
       > button {
         color: var(--very-dark-cyan);
+      }
+      > button:hover {
+        background-color: var(--very-dark-cyan);
       }
     }
   }
@@ -81,4 +96,22 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    > button {
+      border-radius: 0;
+    }
+    > .one {
+      border-top-right-radius: 0.5rem;
+      border-bottom-left-radius: 0rem;
+    }
+    > .three {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0.5rem;
+    }
+  }
 }
