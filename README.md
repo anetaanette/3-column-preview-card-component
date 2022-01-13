@@ -4,16 +4,16 @@
 
 # Desktop
 
-![desktop](images/screenshot-desktop)
+![desktop](https://github.com/anetaanette/3-column-preview-card-component/blob/main/images/screenshot-desktop.png?raw=true)
 
 # Mobile
 
-![mobile](images/screenshot-mobile)
+![mobile](https://github.com/anetaanette/3-column-preview-card-component/blob/main/images/screenshot-mobile.png?raw=true)
 
 ### Links
 
-- Solution URL: https://github.com/anetaanette/3-column-preview-card-component
-- Live Site URL: https://anetaanette.github.io/3-column-preview-card-component/
+- Solution URL: [https://github.com/anetaanette/3-column-preview-card-component](https://github.com/anetaanette/3-column-preview-card-component)
+- Live Site URL: [https://anetaanette.github.io/3-column-preview-card-component/](https://anetaanette.github.io/3-column-preview-card-component/)
 
 ### Built with
 
@@ -25,7 +25,7 @@
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to continue working on the responsiveness and improve the code so that it's more semantic.
 
 ## Author
 
