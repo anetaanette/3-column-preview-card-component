@@ -50,6 +50,9 @@ body {
         border-radius: 1.5em;
         margin-top: 4em;
         font-weight: bold;
+        > a {
+          text-decoration: none;
+        }
       }
       > button:hover {
         cursor: pointer;

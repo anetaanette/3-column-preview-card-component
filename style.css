@@ -66,6 +66,10 @@ body > main > article > button {
   font-weight: bold;
 }
 
+body > main > article > button > a {
+  text-decoration: none;
+}
+
 body > main > article > button:hover {
   cursor: pointer;
   color: var(--very-light-gray);
