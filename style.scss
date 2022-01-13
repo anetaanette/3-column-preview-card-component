@@ -64,19 +64,29 @@ body {
       border-top-left-radius: 0.5em;
       border-bottom-left-radius: 0.5em;
       > button {
-        color: var(--bright-orange);
+        > a {
+          color: var(--bright-orange);
+        }
       }
       > button:hover {
         background-color: var(--bright-orange);
+        > a {
+          color: var(--very-light-gray);
+        }
       }
     }
     > .two {
       background-color: var(--dark-cyan);
       > button {
-        color: var(--dark-cyan);
+        > a {
+          color: var(--dark-cyan);
+        }
       }
       > button:hover {
         background-color: var(--dark-cyan);
+        > a {
+          color: var(--very-light-gray);
+        }
       }
     }
     > .three {
@@ -84,10 +94,15 @@ body {
       border-top-right-radius: 0.5em;
       border-bottom-right-radius: 0.5em;
       > button {
-        color: var(--very-dark-cyan);
+        > a {
+          color: var(--very-dark-cyan);
+        }
       }
       > button:hover {
         background-color: var(--very-dark-cyan);
+        > a {
+          color: var(--very-light-gray);
+        }
       }
     }
   }

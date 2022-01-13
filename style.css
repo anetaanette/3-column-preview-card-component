@@ -81,7 +81,7 @@ body > main > .one {
   border-bottom-left-radius: 0.5em;
 }
 
-body > main > .one > button {
+body > main > .one > button > a {
   color: var(--bright-orange);
 }
 
@@ -89,16 +89,24 @@ body > main > .one > button:hover {
   background-color: var(--bright-orange);
 }
 
+body > main > .one > button:hover > a {
+  color: var(--very-light-gray);
+}
+
 body > main > .two {
   background-color: var(--dark-cyan);
 }
 
-body > main > .two > button {
+body > main > .two > button > a {
   color: var(--dark-cyan);
 }
 
 body > main > .two > button:hover {
   background-color: var(--dark-cyan);
+}
+
+body > main > .two > button:hover > a {
+  color: var(--very-light-gray);
 }
 
 body > main > .three {
@@ -107,12 +115,16 @@ body > main > .three {
   border-bottom-right-radius: 0.5em;
 }
 
-body > main > .three > button {
+body > main > .three > button > a {
   color: var(--very-dark-cyan);
 }
 
 body > main > .three > button:hover {
   background-color: var(--very-dark-cyan);
+}
+
+body > main > .three > button:hover > a {
+  color: var(--very-light-gray);
 }
 
 footer > .attribution {
