@@ -1,11 +1,4 @@
-@import url(https://fonts.google.com/specimen/Big+Shoulders+Display);
-@import url(https://fonts.google.com/specimen/Lexend+Deca);
-/* 
-- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-- Weights: 400
-
-- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
-- Weights: 700 */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 :root {
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
@@ -16,6 +9,7 @@
 
 body {
   background: var(--very-light-gray);
+  font-size: 15px;
 }
 
 body > main {
@@ -35,36 +29,69 @@ body > main {
 body > main > article {
   height: 350px;
   width: 240px;
-  padding: 10px;
+  padding: 15px;
+  padding-left: 30px;
+}
+
+body > main > article > img {
+  padding-top: 15px;
+  padding-left: 20px;
 }
 
 body > main > article > h4 {
   text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 1.8em;
+  color: var(--transparent-white);
 }
 
 body > main > article > p {
   color: var(--transparent-white);
+  font-size: 1em;
+  font-family: "Lexend Deca", sans-serif;
+  height: 100px;
+  width: 200px;
 }
 
 body > main > article > button {
   background-color: var(--very-light-gray);
   border: 1px solid var(--very-light-gray);
+  height: 40px;
+  width: 150px;
+  border-radius: 1.5em;
+  margin-top: 1em;
 }
 
 body > main > .one {
   background-color: var(--bright-orange);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+body > main > .one > button {
+  color: var(--bright-orange);
 }
 
 body > main > .two {
   background-color: var(--dark-cyan);
 }
 
+body > main > .two > button {
+  color: var(--dark-cyan);
+}
+
 body > main > .three {
   background-color: var(--very-dark-cyan);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+body > main > .three > button {
+  color: var(--very-dark-cyan);
+}
+
+footer {
+  margin-bottom: 0;
 }
 
 .attribution {
