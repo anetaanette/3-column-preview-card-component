@@ -48,6 +48,7 @@ body {
         width: 150px;
         border-radius: 1.5em;
         margin-top: 4em;
+        font-weight: bold;
       }
       > button:hover {
         cursor: pointer;
@@ -88,26 +89,22 @@ body {
   }
 }
 footer {
-  margin-bottom: 0;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+  > .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  > .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
 @media only screen and (max-width: 425px) {
   main {
     display: flex;
     flex-direction: column;
-    > button {
-      border-radius: 0;
-    }
     > .one {
+      border-radius: 0;
       border-top-right-radius: 0.5rem;
-      border-bottom-left-radius: 0rem;
     }
     > .three {
       border-top-right-radius: 0;
