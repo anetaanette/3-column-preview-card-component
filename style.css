@@ -10,6 +10,7 @@
 body {
   background: var(--very-light-gray);
   font-size: 15px;
+  height: 100vh;
 }
 
 body > main {
