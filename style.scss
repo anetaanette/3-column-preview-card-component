@@ -12,6 +12,8 @@ body {
   background: var(--very-light-gray);
   font-size: 15px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   > main {
     display: flex;
     justify-content: center;
@@ -42,7 +44,7 @@ body {
         line-height: 1.5em;
         margin-top: -1em;
       }
-      > button {
+      > a {
         background-color: var(--very-light-gray);
         border: 2px solid var(--very-light-gray);
         height: 40px;
@@ -54,8 +56,9 @@ body {
           text-decoration: none;
         }
       }
-      > button:hover {
+      > a:hover {
         cursor: pointer;
+        transition: ease 0.3s;
         color: var(--very-light-gray);
       }
     }
@@ -64,29 +67,35 @@ body {
       border-top-left-radius: 0.5em;
       border-bottom-left-radius: 0.5em;
       > button {
-        > a {
-          color: var(--bright-orange);
-        }
+        color: var(--bright-orange);
+        height: 40px;
+        width: 200px;
+        border-radius: 20px;
+        border: 2px solid white;
+        margin-top: 50px;
+        font-weight: bold;
       }
       > button:hover {
         background-color: var(--bright-orange);
-        > a {
-          color: var(--very-light-gray);
-        }
+        transition: ease 0.3s;
+        color: var(--very-light-gray);
       }
     }
     > .two {
       background-color: var(--dark-cyan);
       > button {
-        > a {
-          color: var(--dark-cyan);
-        }
+        color: var(--dark-cyan);
+        height: 40px;
+        width: 200px;
+        border-radius: 20px;
+        border: 2px solid white;
+        margin-top: 50px;
+        font-weight: bold;
       }
       > button:hover {
         background-color: var(--dark-cyan);
-        > a {
-          color: var(--very-light-gray);
-        }
+        transition: ease 0.3s;
+        color: var(--very-light-gray);
       }
     }
     > .three {
@@ -94,15 +103,18 @@ body {
       border-top-right-radius: 0.5em;
       border-bottom-right-radius: 0.5em;
       > button {
-        > a {
-          color: var(--very-dark-cyan);
-        }
+        color: var(--very-dark-cyan);
+        height: 40px;
+        width: 200px;
+        border-radius: 20px;
+        border: 2px solid white;
+        margin-top: 50px;
+        font-weight: bold;
       }
       > button:hover {
         background-color: var(--very-dark-cyan);
-        > a {
-          color: var(--very-light-gray);
-        }
+        transition: ease 0.3s;
+        color: var(--very-light-gray);
       }
     }
   }
@@ -121,13 +133,12 @@ footer {
   main {
     display: flex;
     flex-direction: column;
+    height: auto;
     > .one {
-      border-radius: 0;
-      border-top-right-radius: 0.5rem;
+      border-radius: 0.5em 0.5em 0 0;
     }
     > .three {
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 0.5rem;
+      border-top-right-radius: 0 0 0.5em 0.5em;
     }
   }
 }

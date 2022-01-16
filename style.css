@@ -11,6 +11,13 @@ body {
   background: var(--very-light-gray);
   font-size: 15px;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body > main {
@@ -56,7 +63,7 @@ body > main > article > p {
   margin-top: -1em;
 }
 
-body > main > article > button {
+body > main > article > a {
   background-color: var(--very-light-gray);
   border: 2px solid var(--very-light-gray);
   height: 40px;
@@ -66,12 +73,14 @@ body > main > article > button {
   font-weight: bold;
 }
 
-body > main > article > button > a {
+body > main > article > a > a {
   text-decoration: none;
 }
 
-body > main > article > button:hover {
+body > main > article > a:hover {
   cursor: pointer;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
   color: var(--very-light-gray);
 }
 
@@ -81,15 +90,20 @@ body > main > .one {
   border-bottom-left-radius: 0.5em;
 }
 
-body > main > .one > button > a {
+body > main > .one > button {
   color: var(--bright-orange);
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 body > main > .one > button:hover {
   background-color: var(--bright-orange);
-}
-
-body > main > .one > button:hover > a {
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
   color: var(--very-light-gray);
 }
 
@@ -97,15 +111,20 @@ body > main > .two {
   background-color: var(--dark-cyan);
 }
 
-body > main > .two > button > a {
+body > main > .two > button {
   color: var(--dark-cyan);
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 body > main > .two > button:hover {
   background-color: var(--dark-cyan);
-}
-
-body > main > .two > button:hover > a {
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
   color: var(--very-light-gray);
 }
 
@@ -115,15 +134,20 @@ body > main > .three {
   border-bottom-right-radius: 0.5em;
 }
 
-body > main > .three > button > a {
+body > main > .three > button {
   color: var(--very-dark-cyan);
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin-top: 50px;
+  font-weight: bold;
 }
 
 body > main > .three > button:hover {
   background-color: var(--very-dark-cyan);
-}
-
-body > main > .three > button:hover > a {
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
   color: var(--very-light-gray);
 }
 
@@ -145,14 +169,13 @@ footer > .attribution a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
   main > .one {
-    border-radius: 0;
-    border-top-right-radius: 0.5rem;
+    border-radius: 0.5em 0.5em 0 0;
   }
   main > .three {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0 0 0.5em 0.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
